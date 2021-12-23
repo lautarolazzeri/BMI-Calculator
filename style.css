@@ -7,7 +7,7 @@ body{
 }
 .form{
     background: #fff;
-    height: 240px;
+    height: 260px;
     width: 250px;
     border-radius: 20px;
     margin: 20px auto 20px auto;
@@ -47,6 +47,7 @@ body{
     background-color: #289df6;
     color: #fff;
     margin: auto;
+    margin-top: 20px;
     display: block;
     outline: none;
     cursor: pointer;
@@ -60,13 +61,14 @@ body{
     margin: 5px 20px 5px 8px;
 }
 .row-one, .row-two{
-    padding: 30px 20px 30px 20px;
+    padding: 30px 20px 10px 20px;
 }
 .container{
     display: inline-block;
     position: relative;
     padding-left: 30px;
     cursor: pointer;
+    margin-top: 10px;
     user-select: none;
 }
 .container input{
@@ -91,21 +93,21 @@ body{
 }
 h1{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 50px;
     display: block;
 }
 h2{
     text-align: center;
-}
-h3{
-    text-align: center;
-    padding: 15px;
 }
 .checkmark::after{
     content: "";
     position: absolute;
     display: none;
 }
+.row-two input{
+    margin-top: 10px;
+}
+
 .container input:checked ~ .checkmark::after{
     display: block;
 }

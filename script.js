@@ -23,7 +23,6 @@ function countBmi() {
     else if(female.checked){
         p.push("female");
     }
-form.reset();
     var bmi = Number(p[2])/(Number(p[1])/100*Number(p[1])/100);
     var result = "";
     if(bmi<18.5){
@@ -53,3 +52,9 @@ form.reset();
     document.getElementById("submit").removeEventListener("click", validateForm);
 }
 document.getElementById("submit").addEventListener("click",countBmi);
+
+function reset() {
+    document.getElementById("age").value = "";
+    document.getElementById("height").value = "";
+    document.getElementById("weight").value = "";
+}
